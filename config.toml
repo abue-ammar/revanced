@@ -56,7 +56,7 @@ uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 arch= "arm64-v8a"
 
 [Messenger]
-enabled = true
+enabled = false
 excluded-patches = "'Disable switching emoji to sticker'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
 arch = "arm64-v8a"
