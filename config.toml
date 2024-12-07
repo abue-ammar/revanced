@@ -1,4 +1,4 @@
-enable-magisk-update = true # set this to false if you do not want to receive updates for the module in magisk app
+enable-magisk-update = false # set this to false if you do not want to receive updates for the module in magisk app
 parallel-jobs = 1
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
@@ -7,24 +7,25 @@ parallel-jobs = 1
 # you can use rvmm-config-gen to generate a config
 
 [YouTube]
-build-mode = "both"
+build-mode = "apk"
 excluded-patches = ""
 included-patches = ""
 version = "auto"
+arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 [Music]
-build-mode = "both"
-arch = "both"
+build-mode = "apk"
+arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [GooglePhotos]
-build-mode = "both"
-arch = "both"
+build-mode = "apk"
+arch = "arm64-v8a"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
@@ -40,24 +41,27 @@ uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 # apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 # # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
-# [YouTube-Extended]
-# app-name = "YouTube"
-# patches-source = "inotia00/revanced-patches"
-# cli-source = "inotia00/revanced-cli"
-# rv-brand = "ReVanced Extended"
-# build-mode = "both"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+[YouTube-Extended]
+app-name = "YouTube"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+build-mode = "apk"
+arch = "arm64-v8a"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 # # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
 
 [Twitter]
-enabled = false
+enabled = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
 build-mode = "apk"
 dpi = "120-640dpi"
+arch = "arm64-v8a"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
 
 [Messenger]
-enabled = false
+enabled = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/facebook-2/messenger/"
 arch = "arm64-v8a"
+
